@@ -1,0 +1,57 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*este style es el tamaño del logo*/
+#sprite {
+    background: image('imagenes/vecteezy_cat-playing-tongue-illustration-of-cute-cat-playing-with_9551667-1.jpg') no-repeat;
+	width: 60px;
+	height: 60px;
+    border-radius: 50px;
+}
+
+#container-logo {
+    border: 2px solid lavender;
+    margin: auto;
+    border-radius: 50px; /* Add this line to give round edges */
+    background-color: white;
+
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: lavender;
+}
+
+/*alinea los elementos del las filas (rows)*/
+.container .row{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5px;
+    
+}
+
+.column {
+    margin: 15px; 
+}
+
+.d-flex input{
+    border-radius: 50px; /* Add this line to give round edges */
+    padding: -10px;
+}
+
+#curvo{
+    border-radius: 50px; /* Add this line to give round edges */
+
+    
+}
