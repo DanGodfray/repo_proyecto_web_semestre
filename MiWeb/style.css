@@ -1,0 +1,107 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c1a4d;
+}
+
+footer {
+    background-color: #e2d9f3;
+    color: #432874;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/*este style es el tamaño del logo con las imagenes*/
+#sprite {
+    background: image('imagenes/vecteezy_cat-playing-tongue-illustration-of-cute-cat-playing-with_9551667-1.jpg') no-repeat;
+	width: 60px;
+	height: 60px;
+    border-radius: 50px;
+}
+
+/*se aplico el ID en el div del logo*/
+#container-logo {
+    border: 2px solid #e0cffc;
+    margin: auto;
+    border-radius: 50px; /* Add this line to give round edges */
+    background-color: white;
+    font-size-adjust: 20px;
+    font-size: 20px;
+
+}
+/* id de colores custom de botones*/
+#btn-oscuro{
+    background-color: #a370f7;
+    color: white;
+    border-color: #c29ffa;
+
+}
+
+#btn-oscuro:hover {
+    background-color: #8540f5;
+    color: white;
+    
+}
+
+#btn-claro{
+    background-color: #f7f7f7;
+    color: #a370f7;
+    border-color: #c29ffa;
+    border-radius: 50px;
+}
+#btn-claro:hover{
+    background-color: #e2d9f3;
+    color: #a370f7;
+    border-color: #c29ffa;
+    border-radius: 50px;
+}
+
+/*------------ Aqui empiezan los style que van debajo del header ------------*/
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: lavender;
+}
+
+/*alinea los elementos del las filas (rows)*/
+.container .row{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.col-md-6 {
+    margin: 0 auto;
+    padding-top: 5px;
+   
+    
+}
+
+/*------comienzo del style del buscador------*/
+/*bordes redondos del input*/
+.d-flex input{
+    border-radius: 50px; /* Add this line to give round edges */
+    
+}
+/*bordes redondos del boton y fijacion sobre el input*/
+.d-flex .btn{
+    right: 0;
+    
+    margin-left: -106px;
+}
+/*id para encurvar orillas*/
+#curvo{
+    border-radius: 50px; /* Add this line to give round edges */ 
+}
+/*------fin del style del buscador------*/
