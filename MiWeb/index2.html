@@ -11,8 +11,8 @@
 <body>
     <header>
         <!-- Navbar code goes here -->
-        <nav>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav >
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" >
                 <div class="container-fluid">
                     
                     <div id="container-logo">
@@ -55,9 +55,9 @@
                   </div>
 
                   
-
+                  <!--boton drop down de login-->
                   <div class="dropdown" style="padding-left: 5px; float: right;">
-                    <button  type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <button id="btn-oscuro"  type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                       Iniciar sesion
                     </button>
 
@@ -79,7 +79,7 @@
                             </label>
                           </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                        <button id="btn-oscuro" type="submit" class="btn btn-primary">Ingresar</button>
                       </form>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">¿Primera vez por aca? Registrate</a>
@@ -95,40 +95,102 @@
 
     <div class="wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row" >
 
-                <div class="col-md-6" style="padding-top: 5px;">
+                <div class="col-md-6" >
                     <h1>¡Bienvenidos a Somos Mascotas!</h1>
                     <p>En Somos Mascotas, nos preocupamos por el bienestar de tu mascota. Contamos con una amplia variedad de productos y servicios para el cuidado de tu mascota. ¡Visítanos!</p>
-                    <a href="#" class="btn btn-primary">Conoce más</a>
+                    
                 </div>
-                <div class="col-md-6" style="padding-top: 5px;">
+                <div class="col-md-6" >
                     <img src="imagenes/Imagen de WhatsApp 2024-04-06 a las 19.55.14_76814582.jpg" alt="Mascotas" class="img-fluid" height="400px" width="400px">
                 </div>  
             </div>
 
-            
-            
+            <!--fila dedicada a la barra de busqueda-->
             <div class="row">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
-                <button id="curvo" class="btn btn-secondary" type="submit">
-                  
+                <button id="btn-claro" id="curvo" class="btn btn-primary" type="submit"> 
+                  <!--icono de lupa-->
                   <svg style="margin-right: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                  </svg>
-                  
-                  Buscar</button>
-                
+                  </svg>  
+                  Buscar
+                </button>
               </form>
+            </div>
 
-              
+            <!-- style morado solo para ilustrar delimitaciones -->
+            <div class="row" style="border: 2px solid purple; ">
+              <div id="curvo" class="col-md-6" style="border: 2px solid purple; ">
+                  banner dinamico (carousel)
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>   
               </div>
 
+              
+
+              <div id="curvo" class="col-md-6" style="border: 2px solid purple; ">  
+                  banner dinamico (carousel)
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>                
+              </div>
+            </div>
+
+            <div id="curvo" class="row"  style="border: 2px solid purple; ">
+              <div id="curvo" class="col-md-12" style="border: 2px solid purple; "> 
+                <h2>productos favoritos</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>  
+              </div>  
+            </div>
+              
+            <div id="curvo" class="row"  style="border: 2px solid purple; ">
+              <div id="curvo" class="col-md-3" style="border: 2px solid purple; "> 
+                <h2>productos </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>
+              </div>  
+
+              <div id="curvo" class="col-md-3" style="border: 2px solid purple; "> 
+                <h2>productos </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>
+              </div>  
+
+              <div id="curvo" class="col-md-3" style="border: 2px solid purple; "> 
+                <h2>productos </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>
+              </div>  
+
+              <div id="curvo" class="col-md-3" style="border: 2px solid purple; "> 
+                <h2>productos </h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore et nemo nihil asperiores debitis aut suscipit officia facilis, laboriosam molestias quibusdam dolorum? Perferendis dolores, saepe debitis provident modi suscipit?</p>
+              </div>  
+
+            </div>
+
         </div>
+        
+        <footer>
+            <div class="container" style="border: 2px solid purple; ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Somos Mascotas</h2>
+                        <p>En Somos Mascotas, nos preocupamos por el bienestar de tu mascota. Contamos con una amplia variedad de productos y servicios para el cuidado de tu mascota. ¡Visítanos!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Enlaces</h2>
+                        <ul>
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Contacto</h2>
+                        <p>Correo:</p>
 
-
-
+        </footer>
     </div>
     
 

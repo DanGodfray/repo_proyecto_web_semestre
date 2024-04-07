@@ -2,6 +2,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    color: #2c1a4d;
+}
+
+footer {
+    background-color: #e2d9f3;
+    color: #432874;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
 }
 
 /*este style es el tamaño del logo con las imagenes*/
@@ -14,7 +24,7 @@
 
 /*se aplico el ID en el div del logo*/
 #container-logo {
-    border: 2px solid lavender;
+    border: 2px solid #e0cffc;
     margin: auto;
     border-radius: 50px; /* Add this line to give round edges */
     background-color: white;
@@ -22,12 +32,38 @@
     font-size: 20px;
 
 }
+/* id de colores custom de botones*/
+#btn-oscuro{
+    background-color: #a370f7;
+    color: white;
+    border-color: #c29ffa;
+
+}
+
+#btn-oscuro:hover {
+    background-color: #8540f5;
+    color: white;
+    
+}
+
+#btn-claro{
+    background-color: #f7f7f7;
+    color: #a370f7;
+    border-color: #c29ffa;
+    border-radius: 50px;
+}
+#btn-claro:hover{
+    background-color: #e2d9f3;
+    color: #a370f7;
+    border-color: #c29ffa;
+    border-radius: 50px;
+}
 
 /*------------ Aqui empiezan los style que van debajo del header ------------*/
 .wrapper {
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
     background-color: lavender;
 }
 
@@ -44,6 +80,19 @@
     margin: 0 auto;
     padding-top: 10px;
 }
+
+.col-md-6 {
+    margin: 0 auto;
+    padding-top: 5px;
+   
+    
+}
+
+#my-button {
+    background-color: #0000ff;
+    border-color: #0000ff;
+}
+
 
 /*------comienzo del style del buscador------*/
 /*bordes redondos del input*/
