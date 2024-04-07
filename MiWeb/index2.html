@@ -16,7 +16,7 @@
                 <div class="container-fluid">
                     
                     <div id="container-logo">
-                        <a class="navbar-brand" href="index2.html" style="margin: 0;">
+                        <a class="navbar-brand" href="index.html" style="margin: 0; padding: 0; display: block;">
                             <img id="sprite" alt="logo" src="imagenes/descarga (gatito).png">
                             Somos Mascotas
                             <img id="sprite" alt="logo" src="imagenes/vecteezy_dog-playing-tongue-an-illustration-of-a-cute-dog-playing_9551674.jpg">
@@ -28,12 +28,8 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
+                      
+                      
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Productos
@@ -46,31 +42,57 @@
                           <li><a class="dropdown-item" href="#">Accesorios varios</a></li>
                         </ul>
                       </li>
+                      
                       <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Atencion veterinaria</a>
+                        <a class="nav-link" href="#">Nosotros</a>
                       </li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                       </li>
 
                     </ul>
-                    <form class="d-flex" role="button">
-                      <button class="btn btn-info" type="submit" >Iniciar sesion</button>
+                  </div>
+
+                  
+
+                  <div class="dropdown" style="padding-left: 5px; float: right;">
+                    <button  type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                      Iniciar sesion
+                    </button>
+                    <form class="dropdown-menu p-4" style="width: 300px; float: left; ">
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormEmail2" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Contraseña">
+                      </div>
+                      <div class="mb-3">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                          <label class="form-check-label" for="dropdownCheck2">
+                            Recordar
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Ingresar</button>
+                      
+                      <button type="submit" class="btn btn-primary">Registrarse</button>
                     </form>
                   </div>
+
                 </div>
+
               </nav>
+               <!-- Navbar code ends here -->
         </nav>
     </header>
 
     <div class="wrapper">
-        <div class="container">
+        <div class="container-sm">
             <div class="row">
-
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
-                    <button id="curvo" class="btn btn-secondary" type="submit">Buscar</button>
-                  </form>
 
                 <div class="col-md-6" style="padding-top: 5px;">
                     <h1>¡Bienvenidos a Somos Mascotas!</h1>
@@ -78,10 +100,21 @@
                     <a href="#" class="btn btn-primary">Conoce más</a>
                 </div>
                 <div class="col-md-6" style="padding-top: 5px;">
-                    <img src="carousel/002-min-1.jpg" alt="Mascotas" class="img-fluid" height="300px" width="300px">
+                    <img src="imagenes/Imagen de WhatsApp 2024-04-06 a las 19.55.14_76814582.jpg" alt="Mascotas" class="img-fluid" height="400px" width="400px">
                 </div>  
             </div>
+
+            <div class="row">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
+                <button id="curvo" class="btn btn-secondary" type="submit">Buscar</button>
+              </form>
+              <div class="row">
+
         </div>
+
+
+
     </div>
     
 

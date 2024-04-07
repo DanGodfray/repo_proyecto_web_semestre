@@ -1,5 +1,7 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /*este style es el tamaño del logo*/
@@ -15,9 +17,12 @@
     margin: auto;
     border-radius: 50px; /* Add this line to give round edges */
     background-color: white;
+    font-size-adjust: 20px;
+    font-size: 20px;
 
 }
 
+/*------------ Aqui empiezan los style que van debajo del header ------------*/
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -33,25 +38,18 @@
     
 }
 
-
 .row {
     width: 100%;
     margin: 0 auto;
-    padding-top: 5px;
-    
+    padding-top: 10px;
 }
 
-.column {
-    margin: 15px; 
-}
-
+/*redondeo del boton buscar*/
 .d-flex input{
     border-radius: 50px; /* Add this line to give round edges */
-    padding: -10px;
+    
 }
 
 #curvo{
-    border-radius: 50px; /* Add this line to give round edges */
-
-    
+    border-radius: 50px; /* Add this line to give round edges */ 
 }
