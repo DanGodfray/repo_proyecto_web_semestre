@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/*este style es el tamaño del logo*/
+/*este style es el tamaño del logo con las imagenes*/
 #sprite {
     background: image('imagenes/vecteezy_cat-playing-tongue-illustration-of-cute-cat-playing-with_9551667-1.jpg') no-repeat;
 	width: 60px;
@@ -12,6 +12,7 @@
     border-radius: 50px;
 }
 
+/*se aplico el ID en el div del logo*/
 #container-logo {
     border: 2px solid lavender;
     margin: auto;
@@ -44,12 +45,20 @@
     padding-top: 10px;
 }
 
-/*redondeo del boton buscar*/
+/*------comienzo del style del buscador------*/
+/*bordes redondos del input*/
 .d-flex input{
     border-radius: 50px; /* Add this line to give round edges */
     
 }
-
+/*bordes redondos del boton y fijacion sobre el input*/
+.d-flex .btn{
+    right: 0;
+    
+    margin-left: -106px;
+}
+/*id para encurvar orillas*/
 #curvo{
     border-radius: 50px; /* Add this line to give round edges */ 
 }
+/*------fin del style del buscador------*/
