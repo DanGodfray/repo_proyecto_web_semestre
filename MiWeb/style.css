@@ -13,6 +13,10 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: auto;
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
 }
 
 /*este style es el tamaño del logo con las imagenes*/
@@ -66,12 +70,14 @@ footer {
     margin: 0 auto;
     height: 100%;
     background-color: lavender;
+
 }
 
 /*alinea los elementos del las filas (rows)*/
 .container .row{
     width: 100%;
     margin: 0 auto;
+    
     
 }
 
@@ -84,8 +90,27 @@ footer {
 .col-md-6 {
     margin: 0 auto;
     padding-top: 5px;
-   
-    
+}
+
+.carousel{
+    max-height: 300px;
+    max-width: auto;
+    overflow: hidden;
+}
+
+.carousel-item{
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.d-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+
 }
 
 /*------comienzo del style del buscador------*/
