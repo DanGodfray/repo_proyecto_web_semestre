@@ -9,14 +9,8 @@ footer {
     background-color: #e2d9f3;
     color: #432874;
     text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
-    position: bottom;
-    left: 0;
-    bottom: 0;
-    padding: 1rem;
+    
+    display: block;
 }
 
 /*este style es el tamaño del logo con las imagenes*/
@@ -69,7 +63,7 @@ footer {
     width: 100%;
     margin: 0 auto;
     height: 100%;
-    background-color: lavender;
+    
 
 }
 
@@ -87,11 +81,23 @@ footer {
     padding-top: 10px;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .col-md-6 {
     margin: 0 auto;
     padding-top: 5px;
 }
 
+#clumncard {
+    float: left;
+     width: 25%;
+    padding: 0 10px;
+}
+/*-aqui van los style del carousel-*/
 .carousel{
     max-height: 300px;
     max-width: auto;
@@ -110,6 +116,18 @@ footer {
     margin-left: auto;
     margin-right: auto;
     height: 300px;
+
+}
+
+
+.thumbnail-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+#carousel-1 {
 
 }
 
