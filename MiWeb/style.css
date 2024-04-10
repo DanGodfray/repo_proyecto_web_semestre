@@ -214,3 +214,40 @@ footer {
     border-radius: 50px; /* Add this line to give round edges */ 
 }
 /*------fin del style del buscador------*/
+
+
+/*------Style para producto---------*/
+
+
+#body-producto {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos del contenido */
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos de la columna de la imagen */
+.imagen {
+    flex: 1;
+    max-width: 60%;
+    margin-right: 0%;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos de la columna de detalles del producto */
+.detalles {
+    flex: 1;
+    max-width: 60%;
+}
