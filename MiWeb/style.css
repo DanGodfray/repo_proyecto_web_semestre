@@ -39,11 +39,16 @@
     background-color: #e2d9f3;
 }
 
+.dropdown a:hover{
+    color: #8540f5;   
+}
+
 /* id de colores custom de botones*/
 #btn-oscuro{
     background-color: #a370f7;
     color: white;
     border-color: #c29ffa;
+    border-radius: 50px;
 
 }
 
@@ -84,6 +89,7 @@ body {
 }
 
 footer {
+    height: 5%;
     background-color: #e2d9f3;
     color: #432874;
     text-align: center;
