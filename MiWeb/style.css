@@ -33,6 +33,19 @@
     /**/
 }
 
+.list-unstyled a:hover{
+    color: #8540f5;
+    border-color: #432874;
+    background-color: #e2d9f3;
+}
+
+.mb-1 button:hover{
+    color: #8540f5;
+    border-color: #432874;
+    background-color: #e2d9f3;
+    border-radius: 50px;
+}
+
 div a {
     color: #2c1a4d;
     text-decoration: none;
