@@ -286,6 +286,10 @@ footer {
 #curvo{
     border-radius: 50px; /* Add this line to give round edges */ 
 }
+
+#curvo2{
+    border-radius: 25px; /* Add this line to give round edges */ 
+}
 /*------fin del style del buscador------*/
 
 
