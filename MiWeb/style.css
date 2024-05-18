@@ -378,4 +378,11 @@ footer {
     padding: 0; 
     height: 300px; 
     width: auto;
+    border-radius: 25px;
+}
+
+table td{
+    padding:5px 8px;
+    border:1px solid #CCC;
+    border-radius: 25px;
 }
