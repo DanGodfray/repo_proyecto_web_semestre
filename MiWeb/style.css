@@ -70,6 +70,14 @@ div a {
 
 }
 
+.btn-oscuro{
+    background-color: #a370f7;
+    color: white;
+    border-color: #c29ffa;
+    border-radius: 50px;
+
+}
+
 #btn-oscuro:hover {
     background-color: #8540f5;
     color: white;
