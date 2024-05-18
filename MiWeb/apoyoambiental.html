@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Apoyo Ambiental</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -58,8 +58,8 @@
                       </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" href="huachitos.html">Huachitos</a>
-                    </li>
+                        <a class="nav-link" href="apoyoambiental.html">Apoyo ambiental</a>
+                      </li>
 
                 </ul>
                 
@@ -111,56 +111,66 @@
 </header>
 
     <div class="wrapper">
-        <div class="container">
-            <div class="row" >
 
-                <div class="col-md-6" style="text-align: center; ">
-                    <h1>Somos Mascotas</h1>
-                    <hr style="width: auto;">
+        <div class="container">
+
+            <div class="row" >
+                <div class="col-md-6" style="text-align: center;">
+                    <h1>Apoyo Ambiental para Chiloé</h1>
+                    <p>¿Quieres formar parte del apoyo ambiental de Chiloé? completa el siguiente formulario para postular</p>   
+                    <hr>    
+                                     
                 </div>
+                
+                <img  id="curvo" style="overflow: hidden; margin: 0; padding: 0; height: 100%; width: 100%;" src="imagenes/Chiloe/IMAGEN 2.jpg" alt="ubicacion" >
                 
             </div>
 
-           
+            <!-- Formulario de postulacion -->
 
-            <!-- style morado solo para ilustrar delimitaciones -->
-            <div class="row"  >
-              <div  class="col-md-6" style=" border-radius: 25px; padding-top: 10px; ">
-                <h2 style="text-align: center;">Sobre nosotros</h2>
-                <p style="text-align: justify;padding: 10px;">Somos Mascotas, la cadena de tiendas para mascotas más grande del pais, con una gran variedad de productos para hacer feliz a tu mascota.</p>
-              </div>
-
-              
-
-              <div class="col-md-6" style="text-align: center; ">      
-                <div class="row" style="padding: 0; display: inline-block;">
-                    <img  id="curvo" style="align-content: center; margin: 0; padding: 0; height: 300px; width: auto;" src="imagenes/somos-mascotas/Untitled-133.jpg" alt="ubicacion" >
-                </div>
-              </div>
-
-            </div>
-<!-- style morado solo para ilustrar delimitaciones -->
-            <div id="curvo" class="row" style="object-fit: contain; position: relative; ">
-              <div class="col-md-6" style="text-align: center;">
+            <div id="curvo2" class="row" style="position: relative; margin: auto;" >
+                <div  id="curvo2" class="col-md-6" style="margin: auto; background-color: lavender; padding-top: 15px;">
+                    <form >
+                        
+                        <input  id="curvo" type="text" class="form-control" placeholder="Rut" pattern="[0-9]{8}[0-9,k]" title="Debe ingresar el Rut sin puntos ni guion" required>
+                        <br>
+                        <input  id="curvo" type="tel" class="form-control" placeholder="Apellido Paterno" pattern="[A-Z][a-z]"  required>
+                        <br>
+                        <input  id="curvo" type="email" class="form-control" placeholder="Apellido Materno" required>
+                        <br>
+                        <input  id="curvo" type="text" class="form-control" placeholder="Nombre(s)" required>
+                        <br>
+                        <input  id="curvo" type="date" class="form-control" placeholder="Fecha de Nacimiento" required>
+                        <br>
+                        <input  id="curvo" type="number" class="form-control" placeholder="Edad" required>
+                        <br>
+                        <select id="curvo" type="select" class="form-control" placeholder="Genero" required>
+                            <option value="" disabled selected>Genero</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <br>
+                        <input  id="curvo" type="number" class="form-control" placeholder="Telefono/Celular" required>
+                        <br>
+                        <textarea id="carta" style="height: 100px;" class="form-control" aria-label="With textarea" placeholder="¿Que te motiva a participar?" required></textarea>
+                        <br>
+                        <button  style="margin-bottom: 20px;" id="btn-oscuro" type="submit" class="btn btn-primary">Crear Carta</button>
+                        <br>
+                    </form>  
                     
-                <div class="row" style="padding: 0; display: inline-block;">
-                    <img  id="curvo" style="align-content: center; margin: 0; padding: 0; height: 300px; width: auto;" src="imagenes/somos-mascotas/Tienda mascotas prog web.jpg" alt="ubicacion" >
+                    
                 </div>
-              </div>
-              
 
-              <div id="curvo" class="col-md-6" >  
-                <p style="text-align: justify; padding: 10px;">Nuestro principal objetivo es brindar todo lo que una mascota necesita y sueña para ser feliz. Desde las mejores marcas de alimentos para asegurar su bienestar y prolongar su vida, hasta los juguetes más resistentes para tener una vida llena de momentos divertidos.</p>
-              </div>
+                
+
+                
             </div>
-
-           
 
         </div>
-        
-        
-    </div>
     
+    </div>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -180,9 +190,8 @@
         </div>
       </div>
     </footer>
-
-
-
+    
+    <script src="scriptmascotas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
