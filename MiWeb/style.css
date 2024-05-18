@@ -1,45 +1,47 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #2c1a4d;
 }
 
-/*este style es el tamaño del logo con las imagenes*/
 #sprite {
-    background: image('imagenes/vecteezy_cat-playing-tongue-illustration-of-cute-cat-playing-with_9551667-1.jpg') no-repeat;
-	width: 60px;
-	height: 60px;
+    background: url('imagenes/vecteezy_cat-playing-tongue-illustration-of-cute-cat-playing-with_9551667-1.jpg') no-repeat;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
 }
 
-/*se aplico el ID en el div del logo*/
 #container-logo {
     border: 3px solid #e0cffc;
     margin: auto;
-    border-radius: 50px; /* Add this line to give round edges */
+    border-radius: 50px;
     background-color: white;
-    font-size-adjust: 20px;
     font-size: 20px;
-    
 }
 
-.navbar a:hover{
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a:hover {
     color: #8540f5;
     text-decoration: none;
     background-color: #e2d9f3;
     border-radius: 50px;
     transition: 0.6s;
-    /**/
 }
 
-.list-unstyled a:hover{
+.list-unstyled a:hover {
     color: #8540f5;
     border-color: #432874;
     background-color: #e2d9f3;
 }
 
-.mb-1 button:hover{
+.mb-1 button:hover {
     color: #8540f5;
     border-color: #432874;
     background-color: #e2d9f3;
@@ -57,51 +59,46 @@ div a {
     background-color: #e2d9f3;
 }
 
-.dropdown a:hover{
-    color: #8540f5;   
+.dropdown a:hover {
+    color: #8540f5;
 }
 
-/* id de colores custom de botones*/
-#btn-oscuro{
+#btn-oscuro {
     background-color: #a370f7;
     color: white;
     border-color: #c29ffa;
     border-radius: 50px;
-
 }
 
 #btn-oscuro:hover {
     background-color: #8540f5;
     color: white;
-    
 }
 
-#btn-claro{
+#btn-claro {
     background-color: #f7f7f7;
     color: #a370f7;
     border-color: #c29ffa;
     border-radius: 50px;
 }
-#btn-claro:hover{
+
+#btn-claro:hover {
     background-color: #e2d9f3;
     color: #a370f7;
     border-color: #c29ffa;
     border-radius: 50px;
 }
 
-/*------------ Aqui empiezan los style que van debajo del header ------------*/
 .wrapper {
     width: 100%;
     margin: 0 auto;
     height: 100%;
-    
-
 }
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensure that the body fills the entire viewport height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -111,23 +108,20 @@ footer {
     background-color: #e2d9f3;
     color: #432874;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom, very important */
+    margin-top: auto;
     width: 100%;
-    
 }
 
 .container {
-    flex: 1; /* Grow and fill remaining space */
-    margin-bottom: 60px; 
+    flex: 1;
+    margin-top: 80px; /* Ajusta esto según la altura de tu navbar */
+    margin-bottom: 60px;
 }
 
-/*alinea los elementos del las filas (rows)*/
-.container .row{
+.container .row {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 5px;
-    
-    
 }
 
 .row {
@@ -135,15 +129,12 @@ footer {
     margin: 0 -5px;
     padding-top: 10px;
     margin-bottom: 10px;
-    
 }
 
-/*-comienzo fila de cards-*/
-.row-card{
+.row-card {
     margin: 0 -5px;
     padding-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 .row-cards:after {
@@ -151,8 +142,6 @@ footer {
     display: table;
     clear: both;
 }
-/*-fin fila de cards-*/
-
 
 .col-md-6 {
     margin: 0 auto;
@@ -161,28 +150,14 @@ footer {
 }
 
 .column-card {
-    float: left;
     width: 25%;
     height: 25%;
     padding: 0 5px;
     text-decoration: none;
     margin-bottom: 15px;
-    
 }
 
-.card{
-    height: 150px;
-}
-
-@media screen and (max-width: 600px) {
-    .column-card {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
-  .card {
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px;
     text-align: center;
@@ -190,76 +165,61 @@ footer {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-  }
+}
 
-  .card:hover {
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-color: #8540f5;
-  }
+}
 
-  
-  .row-cards {
+.row-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-
 .column-card {
-    width: calc(25% - 5px); /* Adjust the width to fit 3 cards in a row */
+    width: calc(33.3% - 5px);
     margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
     .column-card {
-        width: calc(50% - 10px); /* Adjust the width to fit 2 cards in a row for smaller screens */
+        width: calc(50% - 10px);
     }
 }
 
 @media (max-width: 768px) {
     .column-card {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%;
     }
 }
 
 #columncard {
-    float: left;
-     width: 25%;
+    width: 25%;
     padding: 0 10px;
 }
-/*-aqui van los style del carousel-*/
-/* Custom CSS for carousel indicators */
+
 .carousel-indicators button {
     background-color: #8540f5 !important;
-
 }
 
-/* Custom CSS for carousel control buttons not in use yet */
 .carousel-control-prev,
 .carousel-control-next {
-    
-    
 }
 
-/* Custom CSS for carousel control icons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #8540f5 !important;
     border-color: black !important;
 }
-/*--------------------------------*/
-
 
 .d-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 30rcap;
-
 }
-
-
-/*fin del style carousel*/
 
 .thumbnail-container {
     display: block;
@@ -268,33 +228,22 @@ footer {
     height: 300px;
 }
 
-
-
-/*------comienzo del style del buscador------*/
-/*bordes redondos del input*/
-.d-flex input{
-    border-radius: 50px; /* Add this line to give round edges */
-    
+.d-flex input {
+    border-radius: 50px;
 }
-/*bordes redondos del boton y fijacion sobre el input*/
-.d-flex .btn{
+
+.d-flex .btn {
     right: 0;
-    
     margin-left: -106px;
 }
-/*id para encurvar orillas*/
-#curvo{
-    border-radius: 50px; /* Add this line to give round edges */ 
+
+#curvo {
+    border-radius: 50px;
 }
 
-#curvo2{
-    border-radius: 25px; /* Add this line to give round edges */ 
+#curvo2 {
+    border-radius: 25px;
 }
-/*------fin del style del buscador------*/
-
-
-/*------Style para producto---------*/
-
 
 #body-producto {
     font-family: Arial, sans-serif;
@@ -302,8 +251,6 @@ footer {
     padding: 0;
 }
 
-
-/* Estilos del contenido */
 .contenido {
     display: flex;
     flex-wrap: wrap;
@@ -311,7 +258,6 @@ footer {
     padding: 20px;
 }
 
-/* Estilos de la columna de la imagen */
 .imagen {
     flex: 1;
     max-width: 60%;
@@ -323,56 +269,53 @@ footer {
     height: auto;
 }
 
-/* Estilos de la columna de detalles del producto */
 .detalles {
     flex: 1;
     max-width: 60%;
 }
 
-
-/*styles para sidebar*/
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
-  }
+}
 
-  .b-example-divider {
+.b-example-divider {
     width: 100%;
     height: 3rem;
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-  }
+}
 
-  .b-example-vr {
+.b-example-vr {
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
-  }
+}
 
-  .bi {
+.bi {
     vertical-align: -.125em;
     fill: currentColor;
-  }
+}
 
-  .nav-scroller {
+.nav-scroller {
     position: relative;
     z-index: 2;
     height: 2.75rem;
     overflow-y: hidden;
-  }
+}
 
-  .nav-scroller .nav {
+.nav-scroller .nav {
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 1rem;
@@ -381,12 +324,11 @@ footer {
     text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-  }
+}
 
-  .btn-bd-primary {
+.btn-bd-primary {
     --bd-violet-bg: #712cf9;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--bd-violet-bg);
@@ -398,13 +340,26 @@ footer {
     --bs-btn-active-color: var(--bs-btn-hover-color);
     --bs-btn-active-bg: #5a23c8;
     --bs-btn-active-border-color: #5a23c8;
-  }
+}
 
-  .bd-mode-toggle {
+.bd-mode-toggle {
     z-index: 1500;
-  }
+}
 
-  .bd-mode-toggle .dropdown-menu .active .bi {
+.bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
-  }
-/*fin styles sidebar*/
+}
+
+/* Estilos del carrito */
+#cart {
+    position: fixed;
+    top: 80px; /* Ajusta esto según la altura de tu navbar */
+    right: 20px;
+    width: 300px; /* Ajusta según tus necesidades */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que el carrito esté por encima de otros elementos */
+    display: none; /* Inicialmente oculto */
+}
