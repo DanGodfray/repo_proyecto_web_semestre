@@ -371,3 +371,11 @@ footer {
     z-index: 1000; /* Asegura que el carrito esté por encima de otros elementos */
     display: none; /* Inicialmente oculto */
 }
+
+#fotos {
+    align-content: center;
+    margin: 0;
+    padding: 0; 
+    height: 300px; 
+    width: auto;
+}

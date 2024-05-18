@@ -5,9 +5,8 @@ $(document).ready(function(){
                 $("#razas").empty();
                 $.each(raiz.data,function(i, item){
                     
-
                     //$("#razas").append("<tr><td>"+data+"</tr><td>")
-                    $("#razas").append("<tr>" +
+                    $("#razas").append("<tr >" +
                     "<td>" + item.nombre + "</td>" +
                     "<td>" + item.tipo + "</td>" +
                     "<td>" + item.color + "</td>" +
@@ -18,7 +17,7 @@ $(document).ready(function(){
                     "<td>" + item.desc_personalidad + "</td>" +
                     "<td>" + (item.esterilizado ? 'Sí' : 'No') + "</td>" +
                     "<td>" + (item.vacunas ? 'Sí' : 'No') + "</td>" +
-                    "<td><img src='" + item.imagen + "' alt='" + item.nombre + "' /></td>" +
+                    "<td><img id='fotos' src='" + item.imagen + "' alt='" + item.nombre + "' /></td>" +
                     "<td><a href='" + item.url + "' target='_blank'>Enlace</a></td>" +
                     "</tr>")
                 })
