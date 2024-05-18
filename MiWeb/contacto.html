@@ -125,16 +125,16 @@
                         
                         
                         <div class="separador">
-                            <input  id="nombre" type="text" name="Nombre" class="form-control" placeholder="Por favor ingresa tu nombre">
+                            <input pattern="[A-Za-z]" id="nombre" type="text" name="Nombre" class="form-control" placeholder="Por favor ingresa tu nombre">
                         </div>
                         <div class="separador">
-                            <input  id="celular" type="tel" name="Celular" class="form-control" placeholder="Por favor ingresa tu telefono">
+                            <input pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" id="celular" type="tel" name="Celular" class="form-control" placeholder="Por favor ingresa tu telefono">
                         </div>
                         <div class="separador">
-                            <input  id="email" type="text" name="Correo" class="form-control" placeholder="Por favor ingresa tu email">
+                            <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" id="email" type="text" name="Correo" class="form-control" placeholder="Por favor ingresa tu email">
                         </div>
                         <div class="separador">
-                            <input  id="dirección" type="text" name="Dirección" class="form-control" placeholder="Por favor ingresa tu direccion">
+                            <input pattern="^[a-zA-Z0-9\s,'-\/\.#]+$" id="dirección" type="text" name="Dirección" class="form-control" placeholder="Por favor ingresa tu direccion">
                         </div>
                         <div class="separador">
                             <textarea  style="height: 100px;" class="form-control" aria-label="With textarea" placeholder="Por favor ingresa el texto"></textarea>
